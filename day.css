@@ -19,6 +19,11 @@ p {
     margin-top: 20px;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 .cake {
     margin: 40px auto;
     width: 200px;
