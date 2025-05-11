@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #d13bff 0%, #ff36dd 100%);
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 4em;
+    margin-top: 50px;
+    animation: pop 1s ease-out infinite alternate;
+}
+
+p {
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+.cake {
+    margin: 40px auto;
+    width: 200px;
+    height: 200px;
+    background: url('https://i.imgur.com/U3vTGjX.png') no-repeat center/contain;
+}
+
+@keyframes pop {
+    from { transform: scale(1);}
+    to { transform: scale(1.05);}
+}
+
+.confetti {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    animation: fall 5s linear infinite;
+    opacity: 0.7;
+}
+
+@keyframes fall {
+    0% { transform: translateY(0) rotate(0);}
+    100% { transform: translateY(100vh) rotate(360deg);}
+}
+
+em {
+    font-size: 1.5em;
+    margin-top: 20px;
+}
